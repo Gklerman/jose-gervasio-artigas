@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(../images/artigas-1.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    min-width: 100vw;
+    padding-top: 30px;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+header p {
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+.headerText {
+    margin-top: 10%;
+    background-color: #111;
+    opacity: 0.8;
+    color: #FFF;
+    text-align: center;
+}
+
+#main {
+    position: relative;
+    margin: 15px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2e364a;
+    z-index: -2;
+}
+h2 { 
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+h3 {
+    text-align: center;
+    color: #FFF;
+    font-weight: 500;
+    padding: 20px 0 0 0;
+}
+
+#imgDiv {
+    position: absolute;
+    top: 93%;
+    left: 68%;
+    background-color: #111;
+    opacity: 0.8;
+    padding: 10px;
+}
+#imgCaption {
+    margin: 5px 0 5px 0;
+    text-align: center;
+    color: #FFF;
+}
+strong {
+    font-weight: 500;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container img {
+    position: absolute;
+    width: 40px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.container:nth-child(2) {
+    animation-delay: 1s;
+}
+.container:nth-child(3) {
+    animation-delay: 2s;
+}
+.container:nth-child(4) {
+    animation-delay: 3s;
+}
+.container:nth-child(5) {
+    animation-delay: 4s;
+}
+.container:nth-child(6) {
+    animation-delay: 5s;
+}
+.container:nth-child(7) {
+    animation-delay: 6s;
+}
+.container:nth-child(8) {
+    animation-delay: 7s;
+}
+.container:nth-child(9) {
+    animation-delay: 8s;
+}
+.container:nth-child(10) {
+    animation-delay: 9s;
+}
+.container:nth-child(11) {
+    animation-delay: 10s;
+}
+.container:nth-child(12) {
+    animation-delay: 11s;
+}
+.container:nth-child(13) {
+    animation-delay: 12s;
+}
+.container:nth-child(14) {
+    animation-delay: 13s;
+}
+.container:nth-child(15) {
+    animation-delay: 14s;
+}
+.container:nth-child(16) {
+    animation-delay: 15s;
+}
+
+.textBox {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+}
+.textBox h3 {
+    margin-bottom: 10px;
+}
+
+.leftContainer {
+    left: 0;
+}
+.rightContainer {
+    left: 50%;
+}
+.rightContainer img {
+    left: -20px;
+}
+
+.leftArrow, .rightArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+.leftArrow {
+    border-left: 15px solid #fff;
+    right: -14px;
+}
+.rightArrow {
+    border-right: 15px solid #fff;
+    left: -14px;
+}
+
+.quoteContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.frases {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #2e364a;
+    color:#FFF;
+}
+.blockquote {
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 25px;
+    background-color: #2e364a;
+    border: 2px solid #B22222;
+    border-radius: 6px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.quoteBorder {
+    border-left-width: 10px;
+}
+.quoteText {
+    padding-bottom: 10px;
+}
+.cite {
+    font-weight: bold;
+    text-align: right;
+}
+.orderOne {
+    order: 3;
+}
+.orderTwo {
+    order: 4;    
+}
+.orderThree {
+    order: 1;
+}
+.orderFour {
+    order: 6;
+}
+.orderFive {
+    order: 2;
+}
+.orderSix {
+    order: 5;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #B22222;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+footer {
+    height: 80px;
+    display: grid;
+    place-items: center;
+    background-color: #2e364a;
+    color: #aaa;
+    font-size: 0.8em;
+}
+footer a {
+    text-decoration: none;
+    color: #FFBF00;
+}
+footer a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #imgDiv {
+        /*width: 100%;*/
+        position: absolute;
+        top: 90%;
+        left: 45%;    
+    }
+}
+@media screen and (max-width: 600px) {
+
+    #imgDiv {
+        width: 100%;
+        position: absolute;
+        top: 90%;
+        left: 0;    
+    }
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px
+    }
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .container img {
+        position: absolute;
+        left: 10px;
+        top: 32px;        
+    }
+    .textBox {
+        font-size: 13px;
+    }
+    .rightContainer {
+        left: 0;
+    }
+    .leftArrow, .rightArrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+    .blockquote {
+        margin: 0 10px 10px 10px;
+        font-size: 1.2em;
+    }
+}
