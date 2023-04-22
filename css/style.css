@@ -296,9 +296,7 @@ strong {
   }
 
 footer {
-    height: 80px;
     display: grid;
-    place-items: center;
     background-color: #2e364a;
     color: #aaa;
     font-size: 0.8em;
@@ -310,6 +308,72 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     font-weight: 500;
+}
+footer h2 {
+    padding-top: 30px;
+}
+.footerContainer {
+    margin-left: 50px;
+}
+.contact h2 {
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.contactForm {
+    width: 400px;
+    padding: 10px 20px;
+    position: relative;
+}
+.contactForm::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    height: 2px;
+    width: 90%;
+    background: #262D3E;
+}
+.contactForm::after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    height: 2px;
+    width: 10%;
+    background: #B22222;    
+}
+.nameBox, .emailBox, .messageBox {
+    padding-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #262D3E;
+    /*border: 1px solid #262D3E;*/
+    color: #FFF;
+}
+input:focus, textarea:focus {
+    outline-color: #FFBF00;
+    background-color: #FFF;
+    color: #000;
+}
+label {
+    font-weight: 500;
+    color:#FFF;
+}
+.submit {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+    background-color: #2ECC71;
+    color: #FFF;
+    font-weight: 500;
+    cursor: pointer;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 

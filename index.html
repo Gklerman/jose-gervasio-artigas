@@ -262,7 +262,32 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
 
     <footer>
-        <p>Created By <a class="contact" href="mailto:germanaraujo@hotmail.com" title="Contacto">Germán Araujo</a> &copy; 2023</p>
+        <div class="footerContainer">
+            <div class="contact">
+                <h2>Contacto</h2>
+                <div class="contactForm">
+                    <form action="php/form.php" method="post">
+                        <div class="nameBox">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="emailBox">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="messageBox">
+                            <label for="message">Mensaje</label>
+                            <textarea name="message" rows ="10" cols="30"></textarea>
+                        </div>
+                        <input class="submit" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        <div class="info">
+            <p>Created By <a class="contact" href="mailto:germanaraujo@hotmail.com" title="Contacto">Germán Araujo</a> &copy; 2023</p>
+        </div>
     </footer>
 
     <script src="js/button.js"></script>
