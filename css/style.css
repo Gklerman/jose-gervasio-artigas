@@ -379,7 +379,6 @@ label {
 
 @media screen and (max-width: 1200px) {
     #imgDiv {
-        /*width: 100%;*/
         position: absolute;
         top: 90%;
         left: 45%;    
@@ -423,5 +422,14 @@ label {
     .blockquote {
         margin: 0 10px 10px 10px;
         font-size: 1.2em;
+    }
+    .frases {
+        margin-bottom: 15px;
+    }
+    .submit {
+        width: 80%;
+    }
+    .contactForm {
+        width: 90%;
     }
 }
