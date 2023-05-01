@@ -309,17 +309,17 @@ footer a:hover {
     text-decoration: underline;
     font-weight: 500;
 }
-footer h2 {
-    padding-top: 30px;
-}
 .footerContainer {
     margin-left: 40px;    
+}
+.contact {
+    width: 400px;
+    margin-top: 20px;    
 }
 .contact h2 {
     text-transform: uppercase;
 }
 .contactForm {
-    width: 400px;
     position: relative;
 }
 .contactForm::before {
@@ -327,7 +327,7 @@ footer h2 {
     content: '';
     top: -5px;
     height: 2px;
-    width: 90%;
+    width: 100%;
     background: #262D3E;
 }
 .contactForm::after {
