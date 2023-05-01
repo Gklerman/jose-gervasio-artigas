@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Gervasio Artigas</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 
@@ -266,18 +267,18 @@
             <div class="contact">
                 <h2>Contacto</h2>
                 <div class="contactForm">
-                    <form action="php/form.php" method="post">
+                    <form action="#" id="action">
                         <div class="nameBox">
                             <label for="name">Nombre</label>
-                            <input type="text" id="name">
+                            <input type="text" id="name" required>
                         </div>
                         <div class="emailBox">
                             <label for="email">Correo electrónico</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" required>
                         </div>
                         <div class="messageBox">
                             <label for="message">Mensaje</label>
-                            <textarea name="message" rows ="10" cols="30"></textarea>
+                            <textarea name="message" rows ="10" cols="30" required></textarea>
                         </div>
                         <input class="submit" type="submit" value="Enviar">
                     </form>
@@ -290,7 +291,9 @@
         </div>
     </footer>
 
+
     <script src="js/button.js"></script>
+    <script src="js/sendEmail.js"></script>
 
 </body>
 </html>
