@@ -7,17 +7,21 @@ const eSubmit = document.getElementById('action');
 eSubmit.addEventListener('submit',(e) => {
     e.preventDefault();
 
+    let emailBody = `<b>Nombre: </b>${eName.value}<br>
+                    <b>Email: </b>${eMail.value}<br>
+                    <b>Mensaje: </b>${eMessage.value}`;
+
     Email.send({
-        SecureToken : "a5a34d22-1e7a-4ccf-862f-7af0aef62b07",
+        SecureToken : "c1e4b921-b2c1-421a-b6ac-94f23f2543ec",
         To : 'gklerman@hotmail.com',
         From : "gklerman@hotmail.com",
-        Subject : "Testing e-mail",
-        Body : "And this is the body"
+        Subject : "Web Contact from " + eMail.value,
+        Body : emailBody
     }).then(
       message => alert(message)
     );
 
 });
 
-
+//smtp.elasticemail.com
 
