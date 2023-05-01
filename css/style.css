@@ -313,15 +313,13 @@ footer h2 {
     padding-top: 30px;
 }
 .footerContainer {
-    margin-left: 50px;
+    margin-left: 40px;    
 }
 .contact h2 {
     text-transform: uppercase;
-    margin-left: 20px;
 }
 .contactForm {
     width: 400px;
-    padding: 10px 20px;
     position: relative;
 }
 .contactForm::before {
