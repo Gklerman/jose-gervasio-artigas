@@ -346,10 +346,9 @@ input, textarea {
     padding: 5px;
     border: none;
     background-color: #262D3E;
-    /*border: 1px solid #262D3E;*/
     color: #FFF;
 }
-input:focus, textarea:focus {
+#name:focus, #email:focus, textarea:focus {
     outline-color: #FFBF00;
     background-color: #FFF;
     color: #000;
@@ -368,6 +367,11 @@ label {
     font-weight: 500;
     cursor: pointer;
 }
+.submit:hover {
+    background-color: #262D3E;
+    color:#2ECC71;
+}
+
 .info {
     display: flex;
     justify-content: center;

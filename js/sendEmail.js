@@ -15,13 +15,16 @@ eSubmit.addEventListener('submit',(e) => {
         SecureToken : "c1e4b921-b2c1-421a-b6ac-94f23f2543ec",
         To : 'gklerman@hotmail.com',
         From : "gklerman@hotmail.com",
-        Subject : "Web Contact from " + eMail.value,
+        Subject : "New web contact from " + eMail.value,
         Body : emailBody
     }).then(
-      message => alert(message)
-    );
+      message => alert(message),
+    )
+
+    eSubmit.reset();
 
 });
 
+//setTimeout(eSubmit.reset(), 3000);
 //smtp.elasticemail.com
 
